@@ -1,0 +1,301 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+
+
+/* Navbar */
+
+
+.header-area {
+	
+    height: 80px;
+	 width: 100%;
+    background: #3D3D3D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	position: sticky;
+	top: 0;
+	z-index:1001;
+}
+
+.main-menu .open-btn {
+    font-size: 30px;
+    color: #fff;
+    margin-right: 50px;
+}
+
+.offcanvas-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #3D3D3D;
+    width: 32vw;
+    height: 100vh;
+    display: flex;
+align-items: center;
+    transform: translateX(100%);
+    transition: all .4s ease;
+z-index:1001;
+}
+
+.offcanvas-menu.active {
+    transform: translateX(0);
+}
+
+.close-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.offcanvas-menu ul {
+    width: 100%;
+}
+
+.offcanvas-menu ul li {
+    list-style: none;
+}
+
+.offcanvas-menu ul li a {
+    font-size: 20px;
+  font-family: "Montserrat";
+    color: #fff;
+    font-weight: 200;
+    line-height: 1.5;
+    display: block;
+    text-decoration: none;
+    padding: 15px 0 15px 3vw;
+    transition: all .4s ease;
+}
+
+.offcanvas-menu ul li a:hover {
+    background: #002048;
+}
+
+
+/* Hs e p */
+
+
+h1{
+  padding: 10px;
+  margin: 30px;
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+h2{
+	
+	color: #fff;
+	font-weight: 800;
+	margin-bottom: 20px;
+		display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h3{
+  padding: 5px;
+  margin: 10px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+   font-family: "Palatino Linotype";
+}
+
+h5{
+  padding: 5px;
+  margin: 10px;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 400;
+  text-align: center;
+   font-family: "Montserrat";
+}
+
+p {
+color: #fff;
+  padding: 15px;
+  font-size: 2vh;
+  text-align: center;
+  margin: 10px;
+  font-family: "Montserrat";
+}
+
+
+/* Vídeo */
+
+
+.container4{
+		width: 100%;
+	height: 100vh;
+	background: #3D3D3D;
+}
+
+.back-video{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; 
+}
+
+
+/* Formulário */
+
+
+.container1{
+	width: 100%;
+	height: 105vh;
+	background: #3D3D3D;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	padding: 2vw 4vw;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 10px;
+}
+
+form h3{
+	color: #BDCCD4;
+	font-weight: 800;
+	margin-bottom: 20px;
+			display: flex;
+	align-items: center;
+	justify-content: center;
+	 font-family: "Montserrat";
+}
+
+form input, form textarea{
+	border: 0;
+	margin: 10px 0;
+	padding: 20px;
+	outline: none;
+	background: transparent;
+	font-size: 16px;
+	color: #fff;
+	resize: none;
+	border: 1px solid #002048;
+	 font-family: "Montserrat";
+}
+
+form button {
+	padding: 15px;
+	background: #002048;
+	color: #BDCCD4;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	width: 300px;
+	height: 50px;
+	margin: 20px auto 0;
+	transition: ease-out 0.3s;
+	box-shadow: inset 0 0 0 0 #BDCCD4;
+	 font-family: "Montserrat";
+}
+
+form button:hover{
+	box-shadow: inset 300px 0 0 0 #BDCCD4;
+	color: #002048;
+}
+
+
+/* Mapa endereço */
+
+
+.container5{
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+iframe{
+	width: 100%;
+	height: 500px;
+}
+
+.container6{
+	background: #002048;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/* Textos e imagens das áreas de atuação */
+
+
+.container7{
+	width: 100%;
+	height: 80vh;
+background-position: center;
+  background-image: url('imagens/im.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+	   position: relative;
+}
+
+.container8{
+	width: 100%;
+	height: 80vh;
+background-position: center;
+  background-image: url('imagens/m.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+   position: relative;
+  
+}
+
+.overlay{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.7);
+}
+
+.textos{
+
+		display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	flex-direction: row;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+	
+}
+
+
+/* Área quem somos */
+
+
+.container9{
+		width: 100%;
+	height: 100vh;
+	background: #002048;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
